@@ -162,12 +162,12 @@ function defineImagesLoaded( EventEmitter, eventie ) {
   };
 
   ImagesLoaded.prototype.complete = function() {
-    var eventName = this.hasAnyBroken ? 'fail' : 'done';
+    var eventName = this.hasAnyBroken ? "fail" : "done";
     this.isComplete = true;
     this.emit( eventName, this );
-    this.emit( 'always', this );
+    this.emit( "always", this );
     if ( this.jqDeferred ) {
-      var jqMethod = this.hasAnyBroken ? 'reject' : 'resolve';
+      var jqMethod = this.hasAnyBroken ? "reject" : "resolve";
       this.jqDeferred[ jqMethod ]( this );
     }
   };

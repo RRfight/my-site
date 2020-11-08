@@ -86,7 +86,7 @@
 			viewportFactor : 0
 		},
 		_init : function() {
-			this.items = Array.prototype.slice.call( document.querySelectorAll( '#' + this.el.id + ' > li' ) );
+			this.items = Array.prototype.slice.call( document.querySelectorAll( "#" + this.el.id + " > li" ) );
 			this.itemsCount = this.items.length;
 			this.itemsRenderedCount = 0;
 			this.didScroll = false;
@@ -106,15 +106,15 @@
 					self.items.forEach( function( el, i ) {
 						if( inViewport( el ) ) {
 							self._checkTotalRendered();
-							classie.add( el, 'shown' );
+							classie.add( el, "shown" );
 						}
 					} );
 
 					// animate on scroll the items inside the viewport
-					window.addEventListener( 'scroll', function() {
+					window.addEventListener( "scroll", function() {
 						self._onScrollFn();
 					}, false );
-					window.addEventListener( 'resize', function() {
+					window.addEventListener( "resize", function() {
 						self._resizeHandler();
 					}, false );
 				}

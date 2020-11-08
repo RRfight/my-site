@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @MapperScan("cn.luischen.dao")
-@EnableCaching
+//@EnableCaching
 public class MySiteApplication {
 
 	public static void main(String[] args) {
