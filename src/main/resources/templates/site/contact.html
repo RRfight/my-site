@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
- <html>
+ <html xmlns:th="http://www.thymeleaf.org">
 
     <head>
 
@@ -262,7 +262,7 @@
 
 		<script src="js/maps.js" type="text/javascript"></script>
 
-        <script src="js/nav.js" type="text/javascript"></script>
+        <script th:src="@{/site/js/nav.js}" type="text/javascript"></script>
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
 
